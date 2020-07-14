@@ -1,0 +1,35 @@
+
+/* Difference Between var,Let and Const */
+
+Var  and Let :var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+------>It can be said that a variable declared with var is defined throughout the program as compared to let.
+
+Ex:Input:
+     console.log(x);
+     var x=5;
+     console.log(x);
+
+   Output:
+      undefined
+       5
+Ex:for Let
+
+Input:
+    console.log(x);
+     let x=5;
+       console.log(x);
+
+Output:
+Error
+
+----> Let Variable scope is with in the BLock.
+
+const:If we declare const before a variable it cannot be modified once it is declared.
+
+Ex:const c = 'hello'
+//Error: Uncaught TypeError: Assignment to constant variable.
+        
+        c = 'world'
+
+
+//----------------------------->END<---------------------------------------------
